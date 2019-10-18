@@ -1,0 +1,6 @@
+{
+  "id": "bbs-ui-extension",
+  "name": "BBS UI Extension",
+  "srcdoc": "./build/index.html",
+  "fieldTypes": ["{FIELD_TYPE}"]
+}
