@@ -1,0 +1,32 @@
+{
+  "name": "bbs-color-picker",
+  "private": true,
+  "version": "0.0.1",
+  "scripts": {
+    "start": "contentful-extension-scripts start",
+    "build": "contentful-extension-scripts build",
+    "configure": "contentful space use && contentful space environment use",
+    "login": "contentful login",
+    "logout": "contentful logout"
+  },
+  "dependencies": {
+    "contentful-ui-extensions-sdk": "3.9.4",
+    "prop-types": "15.7.2",
+    "react": "16.10.2",
+    "react-color": "2.17.3",
+    "react-dom": "16.10.2"
+  },
+  "devDependencies": {
+    "@babel/core": "7.6.4",
+    "@babel/plugin-proposal-class-properties": "7.5.5",
+    "@babel/plugin-transform-runtime": "7.6.2",
+    "@babel/preset-env": "7.6.3",
+    "@babel/preset-react": "7.6.3",
+    "@contentful/contentful-extension-scripts": "0.14.0"
+  },
+  "browserslist": [
+    "last 5 Chrome version",
+    "> 1%",
+    "not ie <= 11"
+  ]
+}

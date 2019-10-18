@@ -22,11 +22,9 @@ Configuration is handled in:
 
 You can duplicate the base extension skeleton:
 
-`cp -r ui-extensions/_stub ui-extensions/{EXTENSION_NAME}`
+`rm -rf ui-extensions/_stub/node_modules ui-extensions/_stub/yarn.lock && cp -r ui-extensions/_stub ui-extensions/{EXTENSION_NAME} && cd ui-extensions/{EXTENSION_NAME}`
 
 Edit extension meta-data:
-
- * `cd ui-extensions/{EXTENSION_NAME}`
 
  * Edit `extension.json` file
 
@@ -40,8 +38,12 @@ Then install extension dependencies and run it in development mode:
 
 #### Authentication with Contentful
 
-Setup `.contentfulrc.json` and run `yarn login && yarn configure` within an extension directory.
+Setup `.contentfulrc.json` and run `npm run login && yarn configure` within an extension directory.
 
 ### Include production build in Contentful
 
 Target `build/index.html` file master blob from Github repository to always get last production ready UI extension in space extensions configuration.
+
+#### Compile new production build
+
+`yarn build` within extension directory.

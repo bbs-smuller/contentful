@@ -1,0 +1,6 @@
+{
+  "id": "bbs-color-picker",
+  "name": "BBS Color Picker",
+  "srcdoc": "./build/index.html",
+  "fieldTypes": ["Symbol"]
+}
